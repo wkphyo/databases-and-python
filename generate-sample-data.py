@@ -1,3 +1,10 @@
+"""
+This script serves to generate several datasets that are uploaded to both a relational database solution (MySQL) and NoSQL data store (MongoDB).
+The data is randomly generated using the random and Faker packages. It is then transformed to a dataframe object and inserted into the 
+appropriate table or collection. 
+"""
+
+
 import pandas as pd
 from collections import defaultdict
 
