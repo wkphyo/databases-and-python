@@ -145,5 +145,9 @@ LIMIT 10;
 conn.cursor().execute(test_query)
 result = cursor.fetchall()
 
+# Test SQL query
 for i in result:
     print(i)
+# Test MongoDB query
+for document in movies_collection.find().limit(5):
+    print(document)
